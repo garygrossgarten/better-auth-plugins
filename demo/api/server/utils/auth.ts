@@ -17,7 +17,7 @@ export default betterAuth({
       domain: 'localhost',
     },
   },
-  database: prismaAdapter(prisma, { provider: 'sqlite' }),
+  database: prismaAdapter(prisma, { provider: 'postgresql' }),
   emailAndPassword: { enabled: true },
   plugins: [
     admin(),
